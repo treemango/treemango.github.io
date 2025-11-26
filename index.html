@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple, fast portfolio">
+    <title>Athul Narayan | Portfolio</title>
+    <style>
+        /* CSS Reset & Variables */
+        :root { --bg: #ffffff; --text: #1a1a1a; --accent: #0066cc; }
+        @media (prefers-color-scheme: dark) { :root { --bg: #1a1a1a; --text: #f0f0f0; --accent: #4da6ff; } }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0; padding: 0; line-height: 1.6; color: var(--text); background: var(--bg);
+            max-width: 800px; margin: 0 auto; padding: 2rem;
+        }
+
+        /* Layout */
+        header { padding-bottom: 2rem; border-bottom: 1px solid #ccc; margin-bottom: 2rem; }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        h2 { font-size: 1.5rem; margin-top: 2rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Project Grid */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .project-card { border: 1px solid #ccc; padding: 1rem; border-radius: 4px; transition: transform 0.1s; }
+        .project-card:hover { transform: translateY(-2px); }
+
+        /* Utilities */
+        .footer { margin-top: 4rem; font-size: 0.9rem; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Athul Narayan</h1>
+        <p>Software Developer & Designer</p>
+        <nav>
+            <a href="#work">Work</a> • <a href="#about">About</a> • <a href="mailto:email@example.com">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <p>I build accessible, pixel-perfect, and performant softwares. I believe in simplicity and speed.</p>
+    </section>
+
+    <section id="work">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h2>doone</h2>
+                <p>C++ implementation of multi-layer neural network written from scratch, trained on the MNIST dataset to classify handwritten digits </p>
+                <a href="https://github.com/treemango/doone">View Code →</a>
+            </div>
+            <div class="project-card">
+                <h2>Flame</h2>
+                <p>A lightweight C++ chess engine implementing the Universal Chess Interface (UCI) protocol without external dependencies.</p>
+                <a href="https://github.com/treemango/Flame">View Code →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Athul Narayan. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
